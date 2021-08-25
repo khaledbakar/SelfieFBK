@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		044F9AC626D70BF200CE0355 /* SelfieFBK.h in Headers */ = {isa = PBXBuildFile; fileRef = 044F9AC426D70BF200CE0355 /* SelfieFBK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		044F9AD026D70E5F00CE0355 /* ViewPickedImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F9ACD26D70E5F00CE0355 /* ViewPickedImageVC.swift */; };
+		044F9AD126D70E5F00CE0355 /* CaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F9ACE26D70E5F00CE0355 /* CaptureVC.swift */; };
+		044F9AD226D70E5F00CE0355 /* SelfiePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F9ACF26D70E5F00CE0355 /* SelfiePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044F9AC126D70BF200CE0355 /* SelfieFBK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SelfieFBK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		044F9AC426D70BF200CE0355 /* SelfieFBK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfieFBK.h; sourceTree = "<group>"; };
 		044F9AC526D70BF200CE0355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044F9ACD26D70E5F00CE0355 /* ViewPickedImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPickedImageVC.swift; sourceTree = "<group>"; };
+		044F9ACE26D70E5F00CE0355 /* CaptureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureVC.swift; sourceTree = "<group>"; };
+		044F9ACF26D70E5F00CE0355 /* SelfiePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfiePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,21 @@
 		044F9AC326D70BF200CE0355 /* SelfieFBK */ = {
 			isa = PBXGroup;
 			children = (
+				044F9ACC26D70E5F00CE0355 /* Controllers */,
 				044F9AC426D70BF200CE0355 /* SelfieFBK.h */,
 				044F9AC526D70BF200CE0355 /* Info.plist */,
 			);
 			path = SelfieFBK;
+			sourceTree = "<group>";
+		};
+		044F9ACC26D70E5F00CE0355 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				044F9ACD26D70E5F00CE0355 /* ViewPickedImageVC.swift */,
+				044F9ACE26D70E5F00CE0355 /* CaptureVC.swift */,
+				044F9ACF26D70E5F00CE0355 /* SelfiePresenter.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044F9AD026D70E5F00CE0355 /* ViewPickedImageVC.swift in Sources */,
+				044F9AD126D70E5F00CE0355 /* CaptureVC.swift in Sources */,
+				044F9AD226D70E5F00CE0355 /* SelfiePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +294,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SelfieFBK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -298,11 +321,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SelfieFBK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
