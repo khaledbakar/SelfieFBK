@@ -30,6 +30,7 @@ public class CaptureVC: UIViewController {//, DismissAcrossAnotherDelegate {
 
     public override func viewDidLoad() {
            super.viewDidLoad()
+        
         view.backgroundColor = .systemBackground
         previewLayer.backgroundColor = UIColor.systemRed.cgColor
         view.layer.addSublayer(previewLayer)
@@ -71,6 +72,7 @@ public class CaptureVC: UIViewController {//, DismissAcrossAnotherDelegate {
         }
         
     }
+    
     private func setupCamera (){
         let session = AVCaptureSession()
         if let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front){
@@ -117,6 +119,7 @@ extension CaptureVC : AVCapturePhotoCaptureDelegate {
 
         let ph = ViewPickedImageVC()
         ph.takenPhoto = imageOutput
+        ph.errorTakedPhoto = error
         ph.modalPresentationStyle = .fullScreen
         ph.capDelegate = cDelegate
 //      ph.dismissDelegate = self

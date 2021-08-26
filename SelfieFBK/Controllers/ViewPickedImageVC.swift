@@ -12,6 +12,7 @@ class ViewPickedImageVC: UIViewController {
     weak var capDelegate : CaptureOutputPhotoDelegate?
 //    weak var dismissDelegate : DismissAcrossAnotherDelegate?
     var takenPhoto : UIImage?
+    var errorTakedPhoto : Error?
     let bigBtnWidth : CGFloat = 120.0
     let bigBtnHeight : CGFloat = 40.0
     
@@ -70,7 +71,7 @@ class ViewPickedImageVC: UIViewController {
     
    
     @objc private func setImageAct()  {
-        capDelegate?.didFinishCaptureProcess(photo:  takenPhoto)
+        capDelegate?.didFinishCaptureProcess(photo:  takenPhoto, error: errorTakedPhoto)
         
         dismiss(animated: true)
       //  dismissDelegate?.dismissAcrossOtherControllers()

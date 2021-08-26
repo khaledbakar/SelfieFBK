@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public protocol CaptureOutputPhotoDelegate : AnyObject {
-    func didFinishCaptureProcess(photo:UIImage?)// or base 64 string to remove uikit 
+    func didFinishCaptureProcess(photo:UIImage?,error:Error?)// or base 64 string to remove uikit 
 }
 
 /* // use in way thats depend on close button
