@@ -6,9 +6,9 @@ then moduale will apper take your photo and set it or retake it if you don't lik
 to use it wherever you want
 
 Usage:
--you drag the framework in your project and embed it and sign from general taget .
+-you drag the framework in your project and embed it and sign from general taget .\n
 -in the plist put camera access permission (Privacy-Camera Usage Description).
--in your viewcontoller you will use it :
+-in your viewcontoller you will use it : \n
 first you should import SelfieFBK
 then,use delegate (CaptureOutputPhotoDelegate) to receive the image and implement the func that had.
 at the end,in action or button you will use the frame work put that code 
