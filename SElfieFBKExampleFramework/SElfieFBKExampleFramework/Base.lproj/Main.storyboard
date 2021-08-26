@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="57w-Ql-8dn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="L8R-Cf-z9g">
+            <objects>
+                <viewController storyboardIdentifier="mainPage" id="57w-Ql-8dn" customClass="ViewController" customModule="SElfieFBKExampleFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPq-RY-Vag">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTo-gK-9Qv">
+                                <rect key="frame" x="137" y="757" width="140" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="3aR-A7-Xtj"/>
+                                    <constraint firstAttribute="height" constant="45" id="dHQ-Sh-Gx1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="Take Selfie">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeSelfieAction:" destination="57w-Ql-8dn" eventType="touchUpInside" id="1NG-2d-PZd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gov-z4-I3e">
+                                <rect key="frame" x="20" y="64" width="374" height="643"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="emM-NY-5yU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gov-z4-I3e" firstAttribute="leading" secondItem="emM-NY-5yU" secondAttribute="leading" constant="20" id="DC4-8R-ULP"/>
+                            <constraint firstItem="emM-NY-5yU" firstAttribute="bottom" secondItem="ZTo-gK-9Qv" secondAttribute="bottom" constant="60" id="DVF-pU-nHn"/>
+                            <constraint firstItem="ZTo-gK-9Qv" firstAttribute="centerX" secondItem="emM-NY-5yU" secondAttribute="centerX" id="F3U-om-LiO"/>
+                            <constraint firstItem="gov-z4-I3e" firstAttribute="top" secondItem="emM-NY-5yU" secondAttribute="top" constant="20" id="MG7-2a-Vxi"/>
+                            <constraint firstItem="ZTo-gK-9Qv" firstAttribute="top" secondItem="gov-z4-I3e" secondAttribute="bottom" constant="50" id="Pjg-76-tTZ"/>
+                            <constraint firstItem="emM-NY-5yU" firstAttribute="trailing" secondItem="gov-z4-I3e" secondAttribute="trailing" constant="20" id="rPX-g1-COM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewImg" destination="gov-z4-I3e" id="pE3-WN-4th"/>
+                        <outlet property="takeSelfieBtn" destination="ZTo-gK-9Qv" id="UO5-55-LcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nta-U2-wgq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

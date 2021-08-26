@@ -1,0 +1,11 @@
+framework module SelfieFBK {
+  umbrella header "SelfieFBK.h"
+
+  export *
+  module * { export * }
+}
+
+module SelfieFBK.Swift {
+    header "SelfieFBK-Swift.h"
+    requires objc
+}

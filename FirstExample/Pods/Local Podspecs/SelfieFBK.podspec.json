@@ -1,0 +1,28 @@
+{
+  "name": "SelfieFBK",
+  "version": "1.3.0",
+  "summary": "Framework for take selfie",
+  "description": "framework for take selfie and send photo directly",
+  "homepage": "https://github.com/khaledbakar/SelfieFBK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "khaled bakar": "khaledbakar7@gmail.com"
+  },
+  "platforms": {
+    "ios": "14.5"
+  },
+  "source": {
+    "git": "https://github.com/khaledbakar/SelfieFBK.git",
+    "tag": "1.3.0"
+  },
+  "source_files": "SelfieFBK/**/*.{swift}",
+  "frameworks": [
+    "UIKit",
+    "AVFoundation"
+  ],
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}
