@@ -52,9 +52,9 @@
 		044F9AC326D70BF200CE0355 /* SelfieFBK */ = {
 			isa = PBXGroup;
 			children = (
+				044F9AC526D70BF200CE0355 /* Info.plist */,
 				044F9ACC26D70E5F00CE0355 /* Controllers */,
 				044F9AC426D70BF200CE0355 /* SelfieFBK.h */,
-				044F9AC526D70BF200CE0355 /* Info.plist */,
 			);
 			path = SelfieFBK;
 			sourceTree = "<group>";
@@ -294,6 +294,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SelfieFBK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -321,6 +322,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SelfieFBK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
